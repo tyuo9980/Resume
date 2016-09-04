@@ -4,47 +4,58 @@
 \usepackage{verbatim}
 
 \begin{document}
-%\addtolength{\topmargin}{0.5in}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     Last updated date
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\lastupdated
+\pagenumbering{gobble}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     Header
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\namesection{Peter}{Li}{ \urlstyle{same}\url{http://peterli.io} \\
-\href{mailto:tyuo9980@gmail.com}{tyuo9980@gmail.com} \enspace | \enspace 647 609 7375
+\namesection{Peter Li}
+{
+
+   {\fa\char"F0C1} \href{http://peterli.io}{peterli.io}
+    \enspace {\fa\char"F0E0} \href{mailto:tyuo9980@gmail.com}{tyuo9980@gmail.com}
+    \enspace {\fa\char"F09B} \href{https://github.com/tyuo9980}{tyuo9980}
+    \enspace {\fa\char"F0E1} \href{https://www.linkedin.com/in/tyuo9980}{tyuo9980} 
 }
+\sectionsep
+\vspace{0.3cm}
+
+\begin{minipage}{\textwidth}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     Column 1
+%     Skills
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{minipage}[t]{0.74\textwidth}
-
+\section{Skills}
+\runsubsection{Languages}
+\enspace
+{\hfill Java, C++, C\#, Go, JavaScript}
+\vspace{0.1cm}
+\\
+\runsubsection{Technologies}
+\enspace
+{\hfill Android, PostgreSQL, MySQL, Redshift}
+\sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     Experience
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Experience}
-
 \runsubsection{Kik Interactive}
-\descript{ \hfill Anti-Spam Developer}
-\location{May 2016 – Aug 2016 | Waterloo, ON}
+\location{\hfill May 2016 – Aug 2016 | Waterloo, ON}
+\descript{Anti-Spam Developer}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item Developed and improved existing machine learning model to classify spam
-\item Wrote Samza features and ops improvements with Nagios, Hadoop Yarn, Apache Samza, Cassandra
-\item Data driven research using Redshift
+\item Developed core features of the anti spam model for classifying malicious users
+\item Maintained and created spam detection features and rules with \textbf{Apache Samza}, \textbf{Hadoop Yarn}, and \textbf{Apache Kafka} to catch spammers in real time based on data driven research using \textbf{Amazon Redshift}
+\item Worked on dev ops by improving system monitoring with \textbf{Pagerduty} and \textbf{Nagios} and helped set up \textbf{Jenkins} for continuous integration
 \end{tightemize}
 \sectionsep
 
 \runsubsection{Veeva Systems}
-\descript{ \hfill Network Developer }
-\location{Sept 2015 – Dec 2015 | Toronto, ON}
+\location{\hfill Sept 2015 – Dec 2015 | Toronto, ON}
+\descript{Network Developer}
 \begin{tightemize}
 \item Java fullstack development using \textbf{Spring}, \textbf{MySQL}, \textbf{Apache Tomcat}, and \textbf{JMVC}
 \item Designed and created a localization framework for quickly exporting and updating translated labels
@@ -53,8 +64,8 @@
 \sectionsep
 
 \runsubsection{Plastic Mobile}
-\descript{ \hfill Software Engineer }
-\location{Jan 2015 – Apr 2015 | Toronto, ON}
+\location{\hfill Jan 2015 – Apr 2015 | Toronto, ON}
+\descript{Software Engineer}
 \begin{tightemize}
 \item Designed and implemented a smartdoor authentication system. Created backend API with \textbf{Django} REST framework
 \item Wrote and set up automated testing scripts for iOS applications using \textbf{Calabash-iOS} with \textbf{Cucumber} in \textbf{Ruby} and \textbf{Gherkin}
@@ -66,7 +77,7 @@
 
 \begin{comment}
 \runsubsection{Imagine Communications}
-\descript{ \hfill Application Developer }
+\descript{\hfill Application Developer}
 \location{May 2014 – Aug 2014 | Waterloo, ON}
 \begin{tightemize}
 \item Developed an internal progress dashboard to record and monitor employee efficiency using \textbf{AngularJS} and \textbf{Bootstrap}
@@ -80,10 +91,11 @@
 %     Projects
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Projects}
+\section{Recent Projects}
 
 \runsubsection{Timewinder}
-\location{\urlstyle{same}\url{http://timewinder.gg} \hfill League of Legends match timeline viewer}
+\location{\hfill\urlstyle{same}\url{http://timewinder.gg}}
+\descript{League of Legends match timeline viewer}
 \begin{tightemize}
 \item Provides a visualization of match statistics and performance over time using \textbf{Riot API} data
 \item \textbf{200,000+} page views, \textbf{40,000+} sessions, and \textbf{35,000+} users on launch with less than \textbf{8\%} bounce rate
@@ -92,12 +104,15 @@
 \sectionsep
 
 \runsubsection{LeGoLegends}
-\location{\hfill Riot API Library in Go}
+\location{}
+\descript{Riot API Library in Go}
 \begin{tightemize}
 \item Written in \textbf{Go}, LeGoLegends is a wrapper for \textbf{Riot API} to help send and process requests
 \end{tightemize} 
 \sectionsep
 
+%BEGIN ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\begin{comment}
 \runsubsection{Bipolar Animals}
 \location{\urlstyle{same}\url{http://ba.peterli.io} \hfill Url alias generator}
 \begin{tightemize}
@@ -124,8 +139,6 @@
 \end{tightemize} 
 \sectionsep
 
-%BEGIN ~~~~~~~~~~~~~~~~~~~~~~~~~~~
-\begin{comment}
 \runsubsection{Myonnaise}
 \location{Hack the North hackathon project}
 \begin{tightemize}
@@ -165,45 +178,13 @@
 %END ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     Column 2
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\end{minipage} 
-\hfill
-\begin{minipage}[t]{0.22\textwidth} 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     Skills
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Skills}
-\subsection{Languages}
-Java \textbullet{}
-C++ \textbullet{}
-C\# \\
-Go \textbullet{}
-Ruby \textbullet{}
-JavaScript \\
-\subsection{Technologies}
-Android \\
-Ruby on Rails \textbullet{}
-Django \\
-PostgreSQL \textbullet{}
-MySQL \\
-AngularJS \textbullet{}
-JMVC \\
-jQuery
-\sectionsep
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     Education
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Education} 
-\subsection{University of Waterloo}
-\location{Candidate for Bachelor in Software Engineering}
-Term 3A | Expected 2018\\
-Waterloo, ON
+\runsubsection{University of Waterloo}
+\location{\hfill 2013 - 2018 | Waterloo, ON}
+\descript{Candidate for Bachelor in Software Engineering}
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -211,51 +192,19 @@ Waterloo, ON
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Awards} 
-\textbf {VEX Robotics World Championship 2011}\\
-Won regional competition\\
-Competed in internationals\\
-\vspace{0.1cm}
-\textbf {Canadian Computing Competition 2013}\\
-Certificate of Distinction\\
-\vspace{0.1cm}
-\textbf {Canadian Computing Competition 2012}\\
-Certificate of Distinction\\
+{
+\textbf {Canadian Computing Competition 2013}
+\descript{\enspace Certificate of Distinction}
+}
+{
+\textbf {Canadian Computing Competition 2012}
+\descript{\enspace Certificate of Distinction}
+}
+{
+\textbf {VEX Robotics World Championship 2011}
+\descript{\enspace Won regional competition, Competed in internationals}
+}
 \sectionsep
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     Relevant Courses
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%\section{Relevant Courses}
-
-%\subsection{Undergraduate}
-
-%\sectionsep
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     Links
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\vspace{1.9cm}
-
-\section{Links} 
-Github:// \href{https://github.com/tyuo9980}{\bf tyuo9980} \\
-LinkedIn://  \href{https://www.linkedin.com/in/tyuo9980}{\bf tyuo9980} \\
-\sectionsep
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     Interests
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Interests} 
-Piano, Jazz \\
-Overclock.net \\
-Competitive FPS \\
-eSports \\
-Table Tennis \\
-Anime, Gaki no Tsukai \\
-\sectionsep
-
-\end{minipage} 
+\end{minipage}
 \end{document}  \documentclass[]{article}
