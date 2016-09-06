@@ -37,7 +37,7 @@ ItalicFont=Lato-LigIta]{Lato-Lig}
         \fontspec[Path = fonts/lato/]{Lato-Lig}\selectfont #1
     } \\[5pt]
     \centering{
-        \color{headings}
+        \color{subheadings}
         \fontsize{11pt}{14pt}
         \fontspec[Path = fonts/lato/]{Lato-Reg}\selectfont #2
     }
