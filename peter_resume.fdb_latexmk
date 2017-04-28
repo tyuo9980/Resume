@@ -35,9 +35,9 @@
   "peter_resume.cls" 1414827321 2821 e163bbf95c9fb5758386967edc246bf0 ""
   "peter_resume.tex" 1448502030 7428 96d09334d57f1938fd81742dba7b0d82 ""
   (generated)
-  "peter_resume.log"
   "peter_resume.dvi"
-["pdflatex"] 1493417638 "peter_resume.tex" "peter_resume.pdf" "peter_resume" 1493417640
+  "peter_resume.log"
+["pdflatex"] 1493418488 "peter_resume.tex" "peter_resume.pdf" "peter_resume" 1493418494
   "/usr/local/texlive/2016/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2016/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136768653 1528 f853c4d1b4e0550255e02831fdc8496f ""
   "/usr/local/texlive/2016/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm" 1136768653 1512 f21f83efb36853c0b70002322c1ab3ad ""
@@ -99,12 +99,12 @@
   "/usr/local/texlive/2016/texmf-dist/web2c/texmf.cnf" 1480464068 31950 ac8b001dc981c955937bf505c6005d23 ""
   "/usr/local/texlive/2016/texmf-var/web2c/xetex/xelatex.fmt" 1480895675 3543605 3d9c84d8321607f3393f6748ca9c5105 ""
   "/usr/local/texlive/2016/texmf.cnf" 1463979140 577 2938757e76f31531e65cc647e3507693 ""
-  "peter_resume.aux" 1493417639 949 f6f674a48be6ace792afca0128664c5d ""
+  "peter_resume.aux" 1493418489 949 f6f674a48be6ace792afca0128664c5d ""
   "peter_resume.cls" 1493415860 2254 a7f094d12813d9138eb1b71122ba6061 ""
-  "peter_resume.out" 1493417639 173 8a7a11933f682200c1f86180b8df8e33 ""
-  "peter_resume.tex" 1493417637 8897 deba2ec7fd75e6a605ab9c01341af8e6 ""
+  "peter_resume.out" 1493418489 173 8a7a11933f682200c1f86180b8df8e33 ""
+  "peter_resume.tex" 1493418493 8910 c3f2016a3e5b8797b16ebb256318ec39 ""
   (generated)
-  "peter_resume.out"
-  "peter_resume.pdf"
-  "peter_resume.aux"
   "peter_resume.log"
+  "peter_resume.out"
+  "peter_resume.aux"
+  "peter_resume.pdf"
