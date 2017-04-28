@@ -8,10 +8,6 @@
 \ProcessOptions\relax
 \LoadClass{article}
 
-% Package Imports
-\usepackage[hmargin=2.8cm, vmargin=1.4cm]{geometry}
-\usepackage{hyperref}
-
 % Color definitions
 \usepackage[usenames,dvipsnames]{xcolor} 
 \definecolor{date}{HTML}{666666} 

@@ -2,6 +2,8 @@
 
 \documentclass[]{peter_resume}
 \usepackage{verbatim}
+\usepackage[hmargin=2.8cm, vmargin=2cm]{geometry}
+\usepackage{hyperref}
 
 \begin{document}
 \pagenumbering{gobble}
@@ -28,11 +30,11 @@
 
 \section{Skills}
 \runsubsection{Languages}
-{\hfill Java, C++, C\#, Go, JavaScript}
+{\hspace{2.1cm} Java, C++, C\#, Go, JavaScript}
 \vspace{0.1cm}
 
 \runsubsection{Technologies}
-{\hfill Android, PostgreSQL, MySQL, Redshift}
+{\hfill Samza, Android, PostgreSQL, MySQL, Redshift, Jenkins, Ruby on Rails, Django}
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -40,34 +42,44 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Experience}
-\runsubsection{Kik Interactive}
-\location{\hfill May 2016 – Aug 2016 | Waterloo, ON}
-\descript{Anti-Spam Developer}
+\runsubsection{Agari Data}
+\location{\hfill Jan 2017 - Apr 2017}
+\descript{Data and Pipeline Engineer \hfill San Mateo, CA}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item Developed core features of the anti spam model for classifying malicious users
-\item Maintained and created spam detection features and rules with \textbf{Apache Samza}, \textbf{Hadoop Yarn}, and \textbf{Apache Kafka} to catch spammers in real time based on data driven research using \textbf{Amazon Redshift}
-\item Worked on dev ops by improving system monitoring with \textbf{Pagerduty} and \textbf{Nagios} and helped set up \textbf{Jenkins} for continuous integration
+\item Architected and developed a data pipeline using \textbf{API Gateway}, \textbf{AWS Lambda}, \textbf{Kinesis}, and \textbf{Terraform} for aggregations on over \textbf{10Gb} of data daily
+\item Developed DMARC hosting workflow for Agari's core product. Fullstack development using \textbf{Ruby on Rails}, \textbf{PostgreSQL}, and \textbf{RSpec}
 \end{tightemize}
 \sectionsep
 
+\runsubsection{Kik Interactive}
+\location{\hfill May 2016 – Aug 2016}
+\descript{Anti-Spam Developer \hfill Waterloo, ON}
+\begin{tightemize}
+\item Developed core features of the anti spam model for classifying malicious users
+\item Maintained and created spam detection features and rules with \textbf{Apache Samza}, \textbf{Hadoop Yarn}, and \textbf{Apache Kafka} to catch spammers in real time based on data driven research using \textbf{Amazon Redshift}
+\item Worked on devops by improving system monitoring with \textbf{Pagerduty} and \textbf{Nagios} and helped set up \textbf{Jenkins} for continuous integration
+\end{tightemize}
+\sectionsep
+
+%\begin{comment}
 \runsubsection{Veeva Systems}
-\location{\hfill Sept 2015 – Dec 2015 | Toronto, ON}
-\descript{Network Developer}
+\location{\hfill Sept 2015 – Dec 2015}
+\descript{Network Developer \hfill Toronto, ON}
 \begin{tightemize}
 \item Java fullstack development using \textbf{Spring}, \textbf{MySQL}, \textbf{Apache Tomcat}, and \textbf{JMVC}
 \item Designed and created a localization framework for quickly exporting and updating translated labels
 \item Improved dataflow performance by reducing parsing processing times by \textbf{10\%}
 \end{tightemize}
 \sectionsep
+%\end{comment}
 
 \runsubsection{Plastic Mobile}
-\location{\hfill Jan 2015 – Apr 2015 | Toronto, ON}
-\descript{Software Engineer}
+\location{\hfill Jan 2015 – Apr 2015}
+\descript{Software Engineer \hfill Toronto, ON}
 \begin{tightemize}
-\item Designed and implemented a smartdoor authentication system. Created backend API with \textbf{Django} REST framework
-\item Wrote and set up automated testing scripts for iOS applications using \textbf{Calabash-iOS} with \textbf{Cucumber} in \textbf{Ruby} and \textbf{Gherkin}
-\item Developed an efficient Google Maps marker clustering algorithm using quadtrees
+\item Created a smartdoor authentication system. Architected backend API with \textbf{Django} REST framework
+\item Wrote and set up automated testing scripts for iOS applications using \textbf{Calabash-iOS} with \textbf{Cucumber} and \textbf{Gherkin}
 \item Worked on localization and Google Analytics for \textbf{Android} applications
 \end{tightemize}
 \sectionsep
@@ -90,6 +102,16 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Projects}
+\begin{comment}
+\runsubsection{RaiseMyElo}
+\location{\hfill\urlstyle{same}\url{http://raisemyelo.gg}}
+\descript{League of Legends improvement service platform}
+\begin{tightemize}
+\item A platform to connect gamers for coaching and elo improvement services
+\item Developed with \textbf{LeGoLegends} library, \textbf{Go} backend, \textbf{PostgreSQL} databases, and \textbf{Charts.js} for visualization. Hosted on \textbf{Heroku}
+\end{tightemize} 
+\sectionsep
+\end{comment}
 
 \runsubsection{Timewinder}
 \location{\hfill\urlstyle{same}\url{http://timewinder.gg}}
@@ -109,14 +131,17 @@
 \end{tightemize} 
 \sectionsep
 
-\runsubsection{PC Pwns Console}
-\descript{Custom Java framework for GUI application developement}
-\vspace{0.1cm}
-
 \runsubsection{BubblEscape}
 \descript{Original Android game, 500+ downloads}
 \vspace{0.1cm}
 
+\runsubsection{PC Pwns Console}
+\descript{Custom Java framework for GUI application developement}
+\vspace{0.1cm}
+
+
+
+\begin{comment}
 \runsubsection{Pathery}
 \descript{Windows desktop client for the popular game Pathery.com}
 \vspace{0.1cm}
@@ -125,6 +150,7 @@
 \descript{URL Shortener made with Ruby on Rails}
 \vspace{0.1cm}
 \sectionsep
+\end{comment}
 
 %BEGIN ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 \begin{comment}
@@ -198,14 +224,15 @@
 
 \section{Education} 
 \runsubsection{University of Waterloo}
-\location{\hfill 2013 - 2018 | Waterloo, ON}
-\descript{Candidate for Bachelor in Software Engineering}
+\location{\hfill 2013 - 2018 Expected}
+\descript{Candidate for Bachelor in Software Engineering \hfill Waterloo, ON}
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     Achievements
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\begin{comment}
 \section{Awards} 
 {
 {Canadian Computing Competition 2013}
@@ -220,6 +247,7 @@
 \descript{\enspace Won regional competition, Competed in internationals}
 }
 \sectionsep
+\end{comment}
 
 \end{minipage}
 \end{document}  
