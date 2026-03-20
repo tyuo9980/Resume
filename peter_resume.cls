@@ -40,14 +40,14 @@ ItalicFont=Lato-LigIta]{Lato-Lig}
         \fontsize{45pt}{45pt}
         \fontspec[Path = fonts/lato/]{Lato-Lig}\selectfont #1
     \end{minipage}%
-    \begin{minipage}[c]{0.33\textwidth}
+    \hspace*{-0.15cm}\begin{minipage}[c]{0.33\textwidth}
         \raggedleft
         \color{subheadings}
         \fontsize{10pt}{16pt}
         \fontspec[Path = fonts/lato/]{Lato-Reg}\selectfont #2
     \end{minipage}%
-    \headersep%
-    \begin{minipage}[c]{0.34\textwidth}
+    \hspace*{-0.15cm}\headersep%
+    \hspace*{-0.15cm}\begin{minipage}[c]{0.33\textwidth}
         \raggedright
         \color{subheadings}
         \fontsize{10pt}{16pt}
