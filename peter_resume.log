@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.3.1)  20 MAR 2026 01:37
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.3.1)  20 MAR 2026 03:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -146,6 +146,33 @@ ght]/OT:script=latn;language=dflt;mapping=tex-text;"
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
 (fontspec)             <->s*[0.9567296970550606]"[fonts/raleway/Raleway-ExtraLi
 ght]/OT:script=latn;language=dflt;+smcp;mapping=tex-text;"
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'Lato-Reg(0)' created for font 'Lato-Reg'
+(fontspec)             with options [Color=primary,Path =
+(fontspec)             fonts/lato/,BoldFont=Lato-Bol,ItalicFont=Lato-RegIta,Bol
+dItalicFont=Lato-BolIta].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"[fonts/lato/Lato-Reg]/OT:script=latn;language=dflt;c
+olor=2B2B2BFF
+(fontspec)             ;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"[fonts/lato/Lato-Bol]/OT:script=latn;language=dflt;c
+olor=2B2B2BFF
+(fontspec)             ;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->"[fonts/lato/Lato-RegIta]/OT:script=latn;language=dfl
+t;color=2B2B2BFF
+(fontspec)             ;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->"[fonts/lato/Lato-BolIta]/OT:script=latn;language=dfl
+t;color=2B2B2BFF
+(fontspec)             ;"
 
 
 Package fontspec Info: 
@@ -484,7 +511,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 23.
 
 Package fontspec Info: 
-(fontspec)             Font family 'Lato-Reg(0)' created for font 'Lato-Reg'
+(fontspec)             Font family 'Lato-Reg(1)' created for font 'Lato-Reg'
 (fontspec)             with options [Path = fonts/lato/].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
@@ -542,12 +569,12 @@ Package rerunfilecheck Info: File `peter_resume.out' has not changed.
 (rerunfilecheck)             Checksum: EC870B32DDD37D65AB70B4A90CF5CEC7;264.
  ) 
 Here is how much of TeX's memory you used:
- 11651 strings out of 469709
- 233754 string characters out of 5466024
- 710223 words of memory out of 5000000
- 40135 multiletter control sequences out of 15000+600000
- 628577 words of font info for 103 fonts, out of 8000000 for 9000
+ 11683 strings out of 469709
+ 234813 string characters out of 5466024
+ 709719 words of memory out of 5000000
+ 40161 multiletter control sequences out of 15000+600000
+ 628609 words of font info for 107 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
- 88i,5n,130p,279b,570s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 88i,5n,130p,297b,570s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on peter_resume.pdf (1 page).

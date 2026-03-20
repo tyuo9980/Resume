@@ -8,6 +8,7 @@
 \ProcessOptions\relax
 \LoadClass{article}
 \setlength{\parindent}{0pt}
+\renewcommand{\textbf}[1]{{\bfseries\itshape #1}}
 
 % Color definitions
 \usepackage[usenames,dvipsnames]{xcolor} 
