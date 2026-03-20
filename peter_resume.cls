@@ -11,8 +11,8 @@
 
 % Color definitions
 \usepackage[usenames,dvipsnames]{xcolor} 
-\definecolor{date}{HTML}{666666} 
-\definecolor{primary}{HTML}{2b2b2b} 
+\definecolor{date}{HTML}{666666}
+\definecolor{primary}{HTML}{2b2b2b}
 \definecolor{headings}{HTML}{6A6A6A}
 \definecolor{subheadings}{HTML}{333333}
 
@@ -25,6 +25,7 @@ BoldItalicFont=Lato-RegIta,
 BoldFont=Lato-Reg,
 ItalicFont=Lato-LigIta]{Lato-Lig}
 \setsansfont[Scale=MatchLowercase,Mapping=tex-text, Path = fonts/raleway/]{Raleway-ExtraLight}
+\newfontfamily\latomedium[Color=primary, Path = fonts/lato/, BoldFont=Lato-Bol, ItalicFont=Lato-RegIta, BoldItalicFont=Lato-BolIta]{Lato-Reg}
 \newfontfamily\fa[Path = fonts/]{FontAwesome.otf}
 \newfontfamily\fab[Path = fonts/]{FontAwesomeBrands.otf}
 
@@ -126,6 +127,7 @@ ItalicFont=Lato-LigIta]{Lato-Lig}
     \itemsep1pt
     \parskip0pt
     \parsep0pt
+    \latomedium\fontsize{10pt}{13pt}\selectfont
 }{
     \end{itemize}
     \vspace{-\topsep}
