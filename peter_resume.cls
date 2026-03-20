@@ -1,5 +1,5 @@
 % Intro Options
-\ProvidesClass{peter_resume}[2014/04/30 CV class]
+\ProvidesClass{peter_resume}[2026/02/23 CV class]
 \NeedsTeXFormat{LaTeX2e}
 \DeclareOption{print}{\def\@cv@print{}}
 \DeclareOption*{%
@@ -7,6 +7,7 @@
 }
 \ProcessOptions\relax
 \LoadClass{article}
+\setlength{\parindent}{0pt}
 
 % Color definitions
 \usepackage[usenames,dvipsnames]{xcolor} 
@@ -24,44 +25,60 @@ BoldItalicFont=Lato-RegIta,
 BoldFont=Lato-Reg,
 ItalicFont=Lato-LigIta]{Lato-Lig}
 \setsansfont[Scale=MatchLowercase,Mapping=tex-text, Path = fonts/raleway/]{Raleway-ExtraLight}
-\newfontfamily\fa{FontAwesome.otf}
+\newfontfamily\fa[Path = fonts/]{FontAwesome.otf}
+\newfontfamily\fab[Path = fonts/]{FontAwesomeBrands.otf}
 
 % Name command
-\newcommand{\namesection}[2]{
-    \centering{
-        \fontsize{35pt}{50pt}
+\newcommand{\headersep}{%
+    \hspace{1em}%
+    {\color{headings}\vrule width 0.4pt}%
+    \hspace{1em}%
+}
+\newcommand{\namesection}[3]{
+    \noindent\hspace*{-0.1cm}\begin{minipage}[c]{0.33\textwidth}
+        \raggedright
+        \fontsize{45pt}{45pt}
         \fontspec[Path = fonts/lato/]{Lato-Lig}\selectfont #1
-    } \\[5pt]
-    \centering{
+    \end{minipage}%
+    \begin{minipage}[c]{0.33\textwidth}
+        \raggedleft
         \color{subheadings}
-        \fontsize{11pt}{14pt}
+        \fontsize{10pt}{16pt}
         \fontspec[Path = fonts/lato/]{Lato-Reg}\selectfont #2
-    }
-    \vspace{-5pt}
+    \end{minipage}%
+    \headersep%
+    \begin{minipage}[c]{0.34\textwidth}
+        \raggedright
+        \color{subheadings}
+        \fontsize{10pt}{16pt}
+        \fontspec[Path = fonts/lato/]{Lato-Reg}\selectfont #3
+    \end{minipage}
+    \vspace{4pt}
 }
 
 % Section seperators 
 \usepackage{titlesec}
 \titlespacing{\section}{0pt}{0pt}{0pt} 
 \titlespacing{\subsection}{0pt}{0pt}{0pt}
-\newcommand{\sectionsep}{\vspace{8pt}}
+\newcommand{\sectionsep}{\vspace{9pt}}
 
 % Headings command
+\newcommand{\sectiontitle}[1]{%
+    \MakeUppercase{#1}%\enspace{\color{primary}\leaders\hrule height 0.5ex depth -0.46ex\hfill\kern0pt}%
+}
 \titleformat{\section}{
     \color{primary}
     \scshape
-    \fontspec[Path = fonts/lato/]{Lato-Bol}
+    \fontspec[Path = fonts/lato/]{Lato-Lig}
     \fontsize{12pt}{18pt}
     \selectfont
     \raggedright
-    \uppercase
-}
-{}{0em}{}
+}{}{0em}{\sectiontitle}
 
 \newcommand{\runsubsection}[1]{
     \color{primary}
-    \fontspec[Path = fonts/lato/]{Lato-Lig}
-    \fontsize{10pt}{11pt}
+    \fontspec[Path = fonts/lato/]{Lato-Bol}
+    \fontsize{12pt}{12pt}
     \selectfont
     \bfseries
     \uppercase{#1}
@@ -73,8 +90,22 @@ ItalicFont=Lato-LigIta]{Lato-Lig}
     \color{subheadings}
     \raggedright
     \scshape
-    \fontspec[Path = fonts/lato/]{Lato-Reg}
-    \fontsize{9pt}{12pt}\selectfont {#1 \\} 
+    \fontspec[Path = fonts/lato/]{Lato-Lig}
+    \fontsize{11pt}{11pt}
+    \bfseries
+    \selectfont {#1} 
+    \normalfont
+}
+
+% Daterange command
+\newcommand{\daterange}[1]{
+    \color{primary}
+    \raggedright
+    \scshape
+    \fontspec[Path = fonts/lato/]{Lato-Lig}
+    \fontsize{11pt}{12pt}
+    \bfseries
+    \selectfont {#1 \\} 
     \normalfont
 }
 
@@ -83,8 +114,8 @@ ItalicFont=Lato-LigIta]{Lato-Lig}
     \color{headings}
     \raggedright
     \fontspec[Path = fonts/lato/]{Lato-Reg}
-    \fontsize{9pt}{11pt}
-    \selectfont {#1\\}
+    \fontsize{10.5pt}{13pt}
+    \selectfont {#1}
     \normalfont
 }
 

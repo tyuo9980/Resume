@@ -2,7 +2,7 @@
 
 \documentclass[]{peter_resume}
 \usepackage{verbatim}
-\usepackage[hmargin=2.8cm, vmargin=2cm]{geometry}
+\usepackage[hmargin=2.3cm, vmargin=1.8cm]{geometry}
 \usepackage{hyperref}
 
 \begin{document}
@@ -13,70 +13,73 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \namesection{Peter Li}
 {
-
-   {\fa\char"F0C1} \href{http://peterli.io}{peterli.io}
-    \enspace {\fa\char"F0E0} \href{mailto:tyuo9980@gmail.com}{tyuo9980@gmail.com}
-    \enspace {\fa\char"F09B} \href{https://github.com/tyuo9980}{tyuo9980}
-    \enspace {\fa\char"F0E1} \href{https://www.linkedin.com/in/tyuo9980}{tyuo9980} 
+    \href{mailto:tyuo9980@gmail.com}{tyuo9980@gmail.com} {\fa\char"F0E0} \\
+    \href{https://github.com/tyuo9980}{tyuo9980} {\fab\char"F09B} \\
+    \href{https://www.linkedin.com/in/tyuo9980}{tyuo9980} {\fab\char"F0E1}
+}
+{
+    Java, Python, Kotlin, C++, JavaScript \\
+    AOSP, Claude Code, Django, PostgreSQL, AWS
 }
 \sectionsep
-\vspace{0.3cm}
 
-\begin{minipage}{\textwidth}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     Skills
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Skills}
-\runsubsection{Languages}
-{\hspace{2.1cm} Java, Python, Kotlin, JavaScript, HTML, CSS, Go, C++, Ruby}
-\vspace{0.1cm}
-
-\runsubsection{Technologies}
-{\hspace{1.5cm} Android, AWS, Heroku, Django, PostgreSQL, iOS, React, Samza, Ruby on Rails}
-\sectionsep
+\noindent\begin{minipage}{\textwidth}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     Experience
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Experience}
-\runsubsection{Google}\location{Mountain View, CA} \daterange{\hfill Oct 2018 - Present}
-\descript{Software Engineer III, Android Automotive OS}
-\vspace{\topsep} % Hacky fix for awkward extra vertical space
+
+\runsubsection{Meta}\location{New York, NY} \daterange{\hfill Apr 2025 - Present}
+\descript{Software Engineer, Resource Accounting Infrastructure}
+\vspace{\topsep}
 \begin{tightemize}
-\item First party app development for \textbf{Android Automotive OS}
-\item Developed reference applications, libraries, and APIs
-\item Worked on \textbf{AAOS Messenger}, \textbf{AAOS Dialer}, \textbf{Android for Cars}, \textbf{Cluster Display}
+    \item Maintained core data ingestion frameworks and aggregation pipelines for \textbf{60+} internal Meta platforms
+    \item Designed and implemented VRT Metadata Migration, which improved data quality of aggregation pipelines by \textbf{3.2\%}, leading to cost reduction and efficiency wins for budgeting server resources
+    \item Developed an \textbf{AI Agent} for oncall, reducing noise by \textbf{20\%} and time-to-resolution by \textbf{60\%} with \textbf{Claude}
+    \item Designed and implemented an end-to-end SLO/SLI observability framework across major pipeline components, improving debuggability and reducing oncall fatigue, leveraging \textbf{Claude Code}
 \end{tightemize}
 \sectionsep
 
-\runsubsection{A Thinking Ape}\location{Vancouver, BC} \daterange{\hfill Sept 2017 – Dec 2017}
-\descript{Software Engineer Intern, Live Ops}
+\runsubsection{Google}\location{Mountain View, CA} \daterange{\hfill Oct 2018 - Mar 2025}
+\descript{Software Engineer, Android Automotive OS - Communication Apps}
 \begin{tightemize}
-\item Developed global in game push notifications for quest progress updates
-\item Developed player inventory organization features for showcase and trading
-\item Implemented new features and maintained existing features for mobile games in \textbf{Android}, \textbf{iOS}, and \textbf{Django} 
+    \item Led technical execution as \textbf{tech lead} of messaging and calling experiences for \textbf{Android Automotive OS}, developing reference applications, libraries, and APIs to support first and third party app development
+    \item Secured a defensive patent \textbf{(IDF-319485, Dpub-302175)} for Alternative Dialer Controls, a \textbf{critical} safety feature unblocking Google Play Store distribution for \textbf{all} third-party calling apps
+    \item Collaborated across functional teams to audit and design message privacy controls, ensuring compliance and resolving user data privacy concerns
+    \item Refactored the entire Messenger app, leading to \textbf{99\% reduction} of ANRs and bug fixes impacting core messaging across bluetooth, platform, and application stacks
+    \item Unbundled Dialer and Messenger apps from the platform, allowing OEMs to provide over the air updates through Google Play Store
+    \item Developed a seamless phone-to-car notification passthrough protocol, improving user transition and continuity when entering a vehicle
+    \item Developed voice assistant integrations for Car App Library, enabling hands free communication controls to improve driver safety
 \end{tightemize}
 \sectionsep
 
-\runsubsection{Agari Data}\location{San Mateo, CA} \daterange{\hfill Jan 2017 - Apr 2017}
-\descript{Data and Pipeline Engineer Intern}
+
+\runsubsection{A Thinking Ape}\descript{Software Engineer Intern, Live Ops} \daterange{\hfill Sept 2017 – Dec 2017}
 \begin{tightemize}
-\item Architected and developed a data pipeline using \textbf{API Gateway}, \textbf{AWS Lambda}, \textbf{Kinesis}, and \textbf{Terraform} for aggregations on over \textbf{10GB} of data daily
-\item Developed DMARC hosting workflow features for Agari's core product using \textbf{Ruby on Rails} and \textbf{PostgreSQL}
+    \item Fullstack \textbf{Android} and \textbf{iOS} game development with \textbf{Django} and \textbf{Redis} backend.
 \end{tightemize}
 \sectionsep
 
+
+\runsubsection{Agari Data}\descript{Data and Pipeline Engineer Intern} \daterange{\hfill Jan 2017 - Apr 2017}
+\begin{tightemize}
+    \item Architected and developed data pipelines with \textbf{AWS API Gateway}, \textbf{Lambda}, \textbf{Kinesis}, and \textbf{Terraform} %aggregations on over \textbf{10GB} of data daily
+    %\item Developed DMARC hosting workflow features using \textbf{Ruby on Rails} and \textbf{PostgreSQL}
+\end{tightemize}
+\sectionsep
+
+
+\begin{comment}
 \runsubsection{Kik Interactive}\location{Waterloo, ON} \daterange{\hfill May 2016 – Aug 2016}
 \descript{Anti-Spam Developer Intern}
 \begin{tightemize}
-\item Developed core features of the anti spam model for classifying malicious users
-\item Maintained and created spam detection features and rules with \textbf{Apache Samza}, \textbf{Hadoop Yarn}, and \textbf{Apache Kafka} to catch spammers in real time based on data driven research using \textbf{Amazon Redshift}
-\item Worked on devops by improving system monitoring with \textbf{Pagerduty} and \textbf{Nagios} and helped set up \textbf{Jenkins} for continuous integration
+    %\item Developed core features of the anti spam model for classifying malicious users
+    \item Developed spam detection features and rules with \textbf{Apache Samza}, \textbf{Hadoop Yarn}, and \textbf{Apache Kafka} to catch spammers in real time based on data driven research using \textbf{Amazon Redshift}
 \end{tightemize}
 \sectionsep
+\end{comment}
 
 \begin{comment}
 \runsubsection{Veeva Systems}\location{Toronto, ON} \daterange{\hfill Sept 2015 – Dec 2015}
@@ -123,24 +126,39 @@
 \sectionsep
 \end{comment}
 
-\runsubsection{timewinder.gg} \daterange{\hfill 2017 - 2018}
-\descript{League of Legends data analytics platform}
+\begin{comment}
+\runsubsection{SF6 Pro AI} \daterange{\hfill 2025}
+\descript{Reinforcement Learning AI player}
 \begin{tightemize}
-\item Provides analysis and visualization of match statistics and performance over time using \textbf{Riot API} data
-\item Architected data aggregation pipeline, saturating Riot API rate limits with \textbf{Celery} message queues
-\item Acquired \textbf{220,000} page views and \textbf{40,000} users internationally since alpha launch. Peaked \textbf{250} concurrent users
-\item Featured on polscygracze.pl, one of the largest Polish gaming blog and news outlets
-\item Developed with \textbf{React}, \textbf{Django}, \textbf{PostgreSQL}, \textbf{d3.js} and \textbf{Charts.js} for visualization. Hosted on \textbf{Heroku} and \textbf{AWS}
+\item AI trained with reinforcement learning against SF6 pros
+\item Live Demo at local tournaments: youtube here
+\end{tightemize} 
+\sectionsep
+\end{comment}
 
+\runsubsection{timewinder.gg}\descript{League of Legends data analytics platform} \daterange{\hfill 2018}
+\begin{tightemize}
+    \item \textbf{Front page of reddit.com/r/leagueoflegends}, acquiring \textbf{220,000} page views and \textbf{40,000} users internationally \textbf{within a week}
+    \item Featured on polscygracze.pl, one of the largest Polish gaming blog and news outlets
+    \item Architected data aggregation pipeline with \textbf{Celery} message queues
+    \item Developed with \textbf{React}, \textbf{Django}, \textbf{PostgreSQL}, \textbf{d3.js} and \textbf{Charts.js}. Hosted on \textbf{Heroku} and \textbf{AWS}
 \end{tightemize} 
 \sectionsep
 
+\runsubsection{Maplestory Bot}\descript{Fully automated trainer for MapleStory} \daterange{\hfill 2025}
+\begin{tightemize}
+\item Integrated \textbf{YOLOv8 computer vision} for realtime object detection and implemented hardware level HID emulation using \textbf{Raspberry Pi} to circumvent anti-cheat mechanisms
+\end{tightemize} 
+\sectionsep
+
+\begin{comment}
 \runsubsection{LeGoLegends}
 \descript{Go Riot API Wrapper}
 \begin{tightemize}
-\item \textbf{Riot API} wrapper with a token bucket rate limiter
+    \item \textbf{Riot API} wrapper with a token bucket rate limiter.
 \end{tightemize} 
 \sectionsep
+\end{comment}
 
 %\vspace{0.1cm}
 
@@ -223,9 +241,8 @@
 %     Education
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Education} 
-\runsubsection{University of Waterloo}\location{Waterloo, ON} \daterange{\hfill 2013 - 2018}
-\descript{Bachelor of Software Engineering}
+\section{Education}
+\runsubsection{University of Waterloo}\descript{Bachelor of Software Engineering} \daterange{\hfill 2013 - 2018}
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
