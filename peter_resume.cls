@@ -3,7 +3,7 @@
 \NeedsTeXFormat{LaTeX2e}
 \DeclareOption{print}{\def\@cv@print{}}
 \DeclareOption*{%
-  \PassOptionsToClass{\CurrentOption}{article}
+\PassOptionsToClass{\CurrentOption}{article}
 }
 \ProcessOptions\relax
 \LoadClass{article}
